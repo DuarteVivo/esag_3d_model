@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EAG 3D</title>
+	<style>
+		body { margin: 0; background-color: #000; color: red; font-family: system-ui, sans-serif;}
+		.pe-n { pointer-events: none;}
+		.pe-a { pointer-events: auto;}
+	</style>
+	<script type="importmap">
+		{
+			"imports": {
+				"three": "./js/three/build/three.module.min.js",
+				"three/addons/": "./js/three/examples/jsm/"
+			}
+		}
+	</script>
+	<script type="module" src="js/main.js"></script>
+</head>
+<body>
+	<div id="scene"></div>
+</body>
+</html>
