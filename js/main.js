@@ -54,7 +54,7 @@ div.textContent = `Campo`
 div.style.color = 'white'
 div.className = 'pe-a btn'
 div.addEventListener('click', function() {
-	$_img_item.src = 'assets/images/biblioteca.webp'
+	$_img_item.src = 'assets/images/15105-Imagem-45.jpg'
 	$_img_pop.style.display = 'flex'
 })
 
@@ -81,7 +81,12 @@ scene.add(obj2d2)
 const div3 = document.createElement('div')
 div3.textContent = `Gínasio`
 div3.style.color = 'white'
-div3.className = 'pe-a'
+div3.className = 'pe-a btn'
+div3.addEventListener('click', function() {
+	$_img_item.src = 'assets/images/128-2008.jpg'
+	$_img_pop.style.display = 'flex'
+})
+
 
 const obj3d3 = new CSS2DObject(div3)
 obj3d3.position.set(-90,210,40)
@@ -91,7 +96,12 @@ scene.add(obj3d3)
 const div4 = document.createElement('div')
 div4.textContent = `Refeitório`
 div4.style.color = 'white'
-div4.className = 'pe-a'
+div4.className = 'pe-a btn'
+div4.addEventListener('click', function() {
+	$_img_item.src = 'assets/images/escola-augusto.jpg'
+	$_img_pop.style.display = 'flex'
+})
+
 
 const obj4d4 = new CSS2DObject(div4)
 obj4d4.position.set(-100,50,40)
@@ -101,7 +111,11 @@ scene.add(obj4d4)
 const div5 = document.createElement('div')
 div5.textContent = `Portão de entrada`
 div5.style.color = 'white'
-div5.className = 'pe-a'
+div5.className = 'pe-a btn'
+div5.addEventListener('click', function() {
+	$_img_item.src = 'assets/images/foto_escola_secundaria.jpg'
+	$_img_pop.style.display = 'flex'
+})
 
 const obj5d5 = new CSS2DObject(div5)
 obj5d5.position.set(-100,-40,40)
@@ -111,7 +125,11 @@ scene.add(obj5d5)
 const div6 = document.createElement('div')
 div6.textContent = `Loja do aluno`
 div6.style.color = 'white'
-div6.className = 'pe-a'
+div6.className = 'pe-a btn'
+div6.addEventListener('click', function() {
+	$_img_item.src = 'assets/images/loja.jpg'
+	$_img_pop.style.display = 'flex'
+})
 
 const obj6d6 = new CSS2DObject(div6)
 obj6d6.position.set(20,-50,40)
@@ -121,7 +139,11 @@ scene.add(obj6d6)
 const div7 = document.createElement('div')
 div7.textContent = `Biblioteca`
 div7.style.color = 'white'
-div7.className = 'pe-a'
+div7.className = 'pe-a btn'
+div7.addEventListener('click', function() {
+	$_img_item.src = 'assets/images/Biblioteca.jpg'
+	$_img_pop.style.display = 'flex'
+})
 
 const obj7d7 = new CSS2DObject(div7)
 obj7d7.position.set(10,10,40)
