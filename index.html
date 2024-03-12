@@ -8,6 +8,22 @@
 		body { margin: 0; background-color: #000; color: red; font-family: system-ui, sans-serif;}
 		.pe-n { pointer-events: none;}
 		.pe-a { pointer-events: auto;}
+		.btn { cursor: pointer;}
+		.btn:hover { text-decoration: underline;}
+		#image-pop {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			display: none;
+			position: absolute;
+			z-index: 10;
+			inset: 0;
+			background-color: rgba(0, 0, 0, 0.801);
+		}
+		#image-pop-item {
+			max-width: 100%;
+			height: auto;
+		}
 	</style>
 	<script type="importmap">
 		{
@@ -21,5 +37,6 @@
 </head>
 <body>
 	<div id="scene"></div>
+	<div id="image-pop"><img id="image-pop-item" src="" alt=""></div>
 </body>
 </html>

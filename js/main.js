@@ -3,6 +3,13 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
 import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js'
 
+const $_img_pop = document.getElementById('image-pop')
+const $_img_item = document.getElementById('image-pop-item')
+
+$_img_pop.addEventListener('click', function() {
+	$_img_pop.style.display = 'none'
+})
+
 const scene = new THREE.Scene()
 
 // CAMERA
@@ -45,7 +52,11 @@ document.body.appendChild( labelRenderer.domElement )
 const div = document.createElement('div')
 div.textContent = `Campo`
 div.style.color = 'white'
-div.className = 'pe-a'
+div.className = 'pe-a btn'
+div.addEventListener('click', function() {
+	$_img_item.src = 'assets/images/biblioteca.webp'
+	$_img_pop.style.display = 'flex'
+})
 
 const obj2d = new CSS2DObject(div)
 obj2d.position.set(220,30,40)
@@ -56,7 +67,11 @@ scene.add(obj2d)
 const div2 = document.createElement('div')
 div2.textContent = `Pátio`
 div2.style.color = 'white'
-div2.className = 'pe-a'
+div2.className = 'pe-a btn'
+div2.addEventListener('click', function() {
+	$_img_item.src = 'assets/images/patio.jpg'
+	$_img_pop.style.display = 'flex'
+})
 
 const obj2d2 = new CSS2DObject(div2)
 obj2d2.position.set(20,100,40)
